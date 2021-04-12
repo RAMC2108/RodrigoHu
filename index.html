@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <!--FontAwesome-->
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+	 <!--Font Crimison Pro-->
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+	 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+	 <!--Mi estilo-->
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="shortcut icon" href="./img/RamcCodeLogoAzul.ico" />
+	<title>Portafolio  - Rodrigo Hu</title>
+</head>
+<body>
+	
+	<div class="container">
+
+	    <!--Barra navegadora-->
+        <nav class="nav-main">
+            <img src="img/RamcCodeLogoAzul.png" class="nav-logo">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#proyectos">Mis proyectos</a>
+                </li>
+                <li>
+                    <a href="#quien-soy">¿Quien soy?</a>
+                </li>
+                <li>
+                    <a href="#">Mi Experiencia</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-izq">
+                <li>
+                    <a>TSU Rodrigo Arturo Hu Cervantes</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Banner principal-->
+        <header class="banner"></header>
+		<!--Titulo mis proyectos-->
+		<div class="titulo">        
+			<h1 id="proyectos">Mis proyectos</h1>
+			</div>
+		<!--Categorias-->
+		<header>
+
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Diseño web</a>
+				<a href="#">Escolares</a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</header>
+		<!--Proyectos-->
+		<section class="grid" id="grid" >
+			
+			<div class="item" 
+				 data-categoria="escolares"
+				 data-etiquetas="escolares"
+				 data-descripcion="1.- Proyecto Escolar"		
+				 data-contenido="Este proyecto se baso en hacer una pagina web con de alguna tematica, en este caso fue del videojuego 'Genshin Impact'"		 
+			>
+				<div class="item-contenido">
+					<img src="img/proyecto-genshin.jpeg" alt="">
+				</div>
+			</div>
+			
+			<div class="item" 
+				 data-categoria="escolares"
+				 data-etiquetas="escolares"
+				 data-descripcion="2.- Proyecto Escolar"		
+				 data-contenido="Este proyecto se baso en crear un generador de formularios usando solamente JavaScript"		 
+			>
+				<div class="item-contenido">
+					<img src="./img/proyecto-form.jpeg" alt="">
+				</div>
+			</div>
+			<div class="item" 
+				 data-categoria="diseño web"
+				 data-etiquetas="diseño web"
+				 data-descripcion="3.- Mi Hogar Seguro"		
+				 data-contenido="En este proyecto entre como apoyo para corregir estilos del css de la pagina de Mi Hogar Seguro"		 
+			>
+				<div class="item-contenido">
+					<img src="./img/proyecto-mihogar.jpeg" alt="">
+				</div>
+			</div>
+
+		</section>
+		<!--Overlay-->
+		<section class="overlay" id="overlay">
+					<div class="container-img">
+						<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+						<img src="" alt="">
+					</div>
+					<h3 class="descripcion"></h3>
+					<p  class="contenido"></p>
+		
+		</section>
+		<hr style="padding-bottom: 20px; visibility: hidden;">
+		<!--¿Quien soy?-->
+		<section class="cards-banner-one" id="quien-soy">
+			<div class="content">
+			  <h2>¿Quién soy?</h2>
+			  
+			  <p>Mi nombre es Rodrigo Hu, soy un tecnico superior universitado, actualmente estoy cursando mi ingenieria
+				  en desarrollo y gestion de software, tengo 21 años
+			  </p>			  
+			</div>
+		</section>
+		<!--Mis habilidades-->
+		<div class="titulo">        
+			<h1 id="proyectos">Mis habilidades</h1>
+			</div>
+		<section>
+			<ul class="skills-bar-container">
+
+				<li>
+				  <div class="progressbar-title">
+					<h3>HTML5</h3>
+					<span class="percent" id="html-pourcent"></span>
+				  </div>
+				  <div class="bar-container">
+					<span class="progressbar progressred" id="progress-html"></span>
+				  </div>
+				</li>
+				<li>
+				  <div class="progressbar-title">
+					<h3>CSS</h3>
+					<span class="percent" id="css-pourcent"></span>
+				  </div>
+				  <div class="bar-container">
+					<span class="progressbar progressblue" id="progress-css"></span>
+				  </div>
+				</li>
+			  
+				<li>
+				  <div class="progressbar-title">
+					<h3>JavaScript</h3>
+					<span class="percent" id="javascript-pourcent"></span>
+				  </div>
+				  <div class="bar-container">
+					<span class="progressbar progresspurple" id="progress-javascript"></span>
+				  </div>
+				</li>
+			  
+				<li>
+				  <div class="progressbar-title">
+					<h3>Shopify</h3>
+					<span class="percent" id="shopify-pourcent"></span>
+				  </div>
+				  <div class="bar-container">
+					<span class="progressbar progressorange" id="progress-shopify"></span>
+				  </div>
+				</li>
+			  
+				<li>
+				  <div class="progressbar-title">
+					<h3>ASP .Net Core</h3>
+					<span class="percent" id="asp-pourcent"></span>
+				  </div>
+				  <div class="bar-container">
+					<span class="progressbar progressgreen" id="progress-asp"></span>
+				  </div>
+				</li>
+
+				<li>
+					<div class="progressbar-title">
+					  <h3>C#</h3>
+					  <span class="percent" id="csharp-pourcent"></span>
+					</div>
+					<div class="bar-container">
+					  <span class="progressbar progressblueplus" id="progress-csharp"></span>
+					</div>
+				  </li>
+
+
+				  <li>
+					<div class="progressbar-title">
+					  <h3>Node Js</h3>
+					  <span class="percent" id="node-pourcent"></span>
+					</div>
+					<div class="bar-container">
+					  <span class="progressbar progressgreenplus" id="progress-node"></span>
+					</div>
+				  </li>
+	
+				  <li>
+					<div class="progressbar-title">
+					  <h3>Express</h3>
+					  <span class="percent" id="express-pourcent"></span>
+					</div>
+					<div class="bar-container">
+					  <span class="progressbar progressredplus" id="progress-express"></span>
+					</div>
+				  </li>
+			  </ul>
+
+			  
+		</section>
+
+		<!--Redes sociales y nombre-->
+		<footer>
+			<div class="redes-sociales">
+				<div>
+					<a href="#" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/rodrigoarturo.hucervantes/" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/rodrigohucervantes/" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/RAMC2108" target="_blank" class="github">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Portafolio de trabajo de <a href="#"> Rodrigo Arturo Hu Cervantes</a> - <a href="#">RamcCode</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+	<script src="skills.js"></script>
+</body>
+</html>
